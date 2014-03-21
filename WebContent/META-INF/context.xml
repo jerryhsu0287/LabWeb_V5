@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context displayName="Exercise Web Application" docBase="Exercise"
+	path="/Exercise" reloadable="true" crossContext="true">
+	<!-- 請注意，此標籤的寫法不能用於 tomcat 5.x -->
+	<!-- SQLServer2005, 2008 -->
+	<Resource name="jdbc/test" auth="Container" type="javax.sql.DataSource"
+		username="root" password="" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/test" maxActive="3"
+		maxIdle="2" maxWait="5000" />
+</Context>

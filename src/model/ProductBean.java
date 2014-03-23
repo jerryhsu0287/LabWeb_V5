@@ -32,7 +32,7 @@ public class ProductBean {
 		try {
 			result = sFormat.parse(data);
 		} catch (ParseException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			result = new java.util.Date(0);
 		}
 		return result;
@@ -42,7 +42,7 @@ public class ProductBean {
 		try {
 			result = Double.parseDouble(data);
 		} catch (NumberFormatException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			result = -1000;
 		}
 		return result;
@@ -52,7 +52,7 @@ public class ProductBean {
 		try {
 			result = Integer.parseInt(data);
 		} catch (NumberFormatException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			result = -1000;
 		}
 		return result;
